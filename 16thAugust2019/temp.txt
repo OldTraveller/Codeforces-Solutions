@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long LL;
+const double PI = 3.141592654;
+
+int main() {
+        ios :: sync_with_stdio(false);
+        cin.tie(nullptr);
+        cout.tie(nullptr);
+
+        int n;
+        cin >> n; 
+        for (int i = 0; i <= n; i++) {
+                for (int k = 0; k <= n - i; k++) {
+                        cout << "  "; 
+                }
+                for (int k = 0; k < i; k++) {
+                        cout << k << " "; 
+                }
+                cout << i << " "; 
+                for (int k = i - 1; k >= 0; k--) {
+                        cout << k << " "; 
+                }
+                for (int k = 0; k <= n - i; k++) {
+                        cout << " "; 
+                }
+                cout << endl;
+        }
+}

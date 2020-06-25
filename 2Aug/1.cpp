@@ -8,6 +8,7 @@ int main() {
         cin.tie(nullptr);
         cout.tie(nullptr);
 
+	// This is new comment
         int n; 
         cin >> n; 
         vector<LL> arr(n);
